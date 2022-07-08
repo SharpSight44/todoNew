@@ -1,12 +1,222 @@
 
-/* 
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0');
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
 
-*/
+.yay{
+  margin-left: 4px;
+  font-size: 25px;
+  color: rgb(255, 217, 0);
+  
+}
+.reset {
+  margin-left: 43px ;
+  color: rgb(29, 3, 146);
+  font-size: 40px;
+  cursor: pointer;
+}
+.checkbox:hover {
+  color: rgb(44, 255, 44);
+  
+}
+.click {
+  color: rgb(44, 255, 44);
+}
+.checkbox {
+  color: #ad7f7f;
+  font-size: 30px;
+  margin-left: 12px;
+  cursor: pointer;
+  
+}
+
+.line {
+  text-decoration: line-through;
+  color: white;
+}
+.sheet {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background: rgba(41, 183, 226, 0.548);
+    position: absolute;
+}
+.form {
+    width: 400px;
+    height: 600px;
+    margin-left: 35%;
+    margin-top: 2%;
+   background: rgb(255, 148, 148);
+   padding: 15px;
+   border: 1px outset rgb(255, 255, 255);
+   border-radius: 5%;
+   box-shadow: 0px 0px 10px 10px rgb(255, 255, 255);
+   
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+    color: rgb(0, 0, 0);
+    list-style-type: none;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 33px;
+    
+}
+body {
+
+  background-image: url("https://img.wallpapersafari.com/desktop/1920/1080/55/86/pb5PKy.jpg"); 
+
+
+}
+h1{
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-bottom: 15px;
+}
+
+input {
+    margin-bottom: 10px;
+    border: 2px outset rgb(255, 255, 255);
+    box-shadow: -2px 0px 10px 6px rgb(255, 29, 134);
+}
+.topper {
+    margin-left: 25%;
+    margin-top: -60px;
+    
+    
+   
+}
+
+.quote{
+    color: rgb(255, 255, 255);
+font-size: 88px;
+font-family: 'Shadows Into Light', cursive;
+text-shadow: 0px 0px 10px rgb(10, 75, 255);
+}
+.author {
+    color: rgb(15, 43, 67);
+    font-size: 33px;
+    margin-left: 44%;
+    text-shadow: 0px 0px 12px rgb(255, 255, 255);
+    font-weight: 500;
+
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: #0d0456;
+    
+ }
+ 
+ .del:hover{
+   color:red ;
+ }
+ .del {
+     margin-top: 2px;
+     font-size: 25px;
+     margin-left: 7px;
+     cursor: pointer;
+     color: #580000;
+     
+     
+    
+ }
+
+ .add {
+     margin-left: 10px;
+     font-size: 29px;
+margin-bottom: 4px;
+font-weight: bold;
+box-shadow: 2px 0px 6px 5px rgb(0, 255, 34);
+border: 2px solid rgb(0, 255, 34) ;
+
+color: rgb(46, 238, 46);
+background-color: azure;
+cursor: pointer;
+ }
+
+ /* React Amination Below  */
+ .container{
+    width:100px;
+    height:100px;
+    
+    margin-left: 10px;
+    background: rgb(255, 148, 148);
+display:flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    box-shadow: 0px 0px 6px 5px white;
+    position: relative;
+    top:30px;
+    left:7px;
+  }
+
+  .react-logo{
+    display: inline-block;
+    border-radius:50%;
+    border:1px solid #ffffff;
+    box-shadow: 0px 0px 5px 3px #00d8ff;
+
+    animation-name:rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+  }
+
+  .react-logo , .react-logo:before , .react-logo:after{
+    position:absolute;
+    display: inline-block;
+    width:100px;
+    height:35px;
+    border-radius:50%;
+    border:1px solid #ffffff;
+    box-shadow: 0px 0px 5px 3px #00d8ff;
+
+  }
+
+  .nucleo , .react-logo , .react-logo:before , .react-logo:after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nucleo{
+    width:10px;
+    height:10px;
+    border-radius:100%;
+    background:#00d8ff;
+  }
+
+  .react-logo:before , .react-logo:after{
+    content:"";
+  }
+
+  .react-logo:after{
+    transform:rotate(-57deg);
+  }
+
+  .react-logo:before{
+    transform:rotate(57deg);
+  }
+  
+.title{
+  font-size:17px;
+  font-weight: bold;
+  background:rgba(0, 0, 0, .6);
+  color:#00d8ff;
+  width:100px;
+  margin-left: 10px;
+  text-align:center;
+}
+
+  @keyframes rotate{
+
+    100%{
+      transform:rotate(360deg);
+    }
+  }
